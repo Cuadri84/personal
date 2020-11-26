@@ -2,20 +2,25 @@
   font-family: alatsi;
 
   src: url(./Alatsi-Regular.ttf);
+  
 }
 
 body {
   background-color: #f9f7cf;
   font-family: alatsi;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 a:link,
 a:visited,
 a:active {
   text-decoration: none;
-  color: #39413d;
+  color: #000000;
   margin: 10vh;
 }
+
+/*barra navegacion*/
 
 .flex-container {
   display: flex;
@@ -31,7 +36,44 @@ a:active {
 }
 
 .flex-container > ul > li:hover {
-  background-color: #dd9866;
+background-color:#dd9866 ;
+padding-top: 28px;
+padding-bottom: 28px;
 
 }
 
+/*LOGO*/
+
+#logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/*frase fullstack developer*/
+@font-face {
+  font-family: cooper;
+
+    src: url(./Copperplate\ Gothic\ Bold\ Regular.ttf) ;
+}
+#fs{
+  text-align: center;
+  font-family: cooper;
+}
+
+/*margen del main*/
+
+body > main{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*tsutsuku*/
+
+#continuara{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
