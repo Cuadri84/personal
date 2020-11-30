@@ -22,25 +22,27 @@ a:active {
 
 /*barra navegacion*/
 
+nav{
+  font-size: 40px;
+
+}
+
 .flex-container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   background-color: #f2dcbb;
 }
 
 .flex-container > ul > li {
-  display: inline;
   background-color: #f2dcbb;
-  line-height: 75px;
-  font-size: 40px;
+  
 }
 
-.flex-container > ul > li:hover {
-background-color:#dd9866 ;
-padding-top: 28px;
-padding-bottom: 28px;
-
+header nav ul {
+  list-style: none;
 }
+
+
 
 /*LOGO*/
 
@@ -69,6 +71,7 @@ body > main{
   margin-right: 10px;
 }
 
+
 /*tsutsuku*/
 
 #continuara{
@@ -76,4 +79,172 @@ body > main{
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+/*yo*/
+
+.yo{
+  width:300px;
+  height:300px;
+  border-radius:300px;
+  border: 15px solid #f2dcbb;
+  margin: 10px;
+}
+
+/*formulario*/
+
+#quierescontact{
+  text-align: center;
+}
+
+
+form{
+	width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+	background-color:#f2dcbb;box-sizing:border-box;
+}
+
+form label{
+	width:72px;
+	font-weight:bold;
+	display:inline-block;
+}
+
+form input[type="text"],
+form input[type="email"]{
+	width:180px;
+	padding:3px 10px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;
+	margin:8px 0;
+	display:inline-block;
+}
+
+form input[type="submit"]{
+	width:100%;
+	padding:8px 16px;
+	margin-top:32px;
+	border:1px solid #000;
+	border-radius:5px;
+	display:block;
+	color:#fff;
+	background-color:#000;
+} 
+
+form input[type="submit"]:hover{
+	cursor:pointer;
+}
+
+textarea{
+	width:100%;
+	height:100px;
+	border:1px solid #f6f6f6;
+	border-radius:3px;
+	background-color:#f6f6f6;			
+	margin:8px 0;
+	/*resize: vertical | horizontal | none | both*/
+	resize:none;
+	display:block;
+}
+/*boton curriculo y  face*/
+.botones{
+  display:flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+}
+
+.boton{
+  text-decoration: none;
+  text-align: center;
+  padding: 3px;
+  font-weight: 600;
+  font-size: 30px;
+  color: #ffffff;
+  background-color:#f2dcbb;
+  border-radius: 6px;
+  border: 2px solid#dd9866;
+  
+}
+
+.boton:hover{
+  color: #000000;
+  background-color: #dd9866;
+}
+
+pre{
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+}
+
+/*footer*/
+hr{
+  height: 5px;
+  background-color:#f2dcbb ;
+  
+}
+footer>p{
+  text-align: center;
+}
+/*articulos de la biografia*/
+
+}
+.articulosbio{ç
+  display:flex;
+  flex: column;
+}
+
+
+#biografia{
+  text-align: justify;
+}
+
+@media screen and (min-width: 480px){
+
+
+  .articulosbio{
+    display:flex;
+    justify-content: center;
+    flex: row;
+    margin: 10px;
+
+  }
+
+  section.articulosbio > p{
+    width: 30%;
+    margin-top: 50px;
+    text-align: justify;
+
+  } 
+
+  .flex-container{
+    flex-direction: row;
+    justify-content: space-around;
+
+  }
+
+  ul.flex-container > li:hover {
+    background-color:#dd9866 ;
+    
+    
+    }
+
+    .yo{
+      margin: 50px;
+    }
+  
+  
+
+}
+
+@media screen and (min-width: 720px){
+
+ 
+
+  
 }

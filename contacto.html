@@ -4,13 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <header>
       <h1 id="fs"><center>FULLSTACK DEVELOPER</center></h1>
-      <nav class="flex-container">
-        <ul>
+      <nav >
+        <ul class="flex-container">
           <li><a href="index.html">HOME</a></li>
           <li><a href="biografia.html">BIOGRAFIA</a></li>
           <li><a href="ejemplostrabajo.html">TRABAJOS</a></li>
@@ -19,25 +21,52 @@
       </nav>
     </header>
     <main>
-        <h1>Contacto</h1>
-        <pre>
-        David Cuadrillero Saura
-        Email: davidcuadrillerosaura@gmail.com
-        Telefono: 687813350
-        </pre>
+      <section>
 
-      <form action="" method="post">
-        <label for="_contacto"
-          >Si quieren ponerse en contacto conmigo tambien pueden hacerlo a
-          traves de este enlace
-        </label>
-        <textarea name="contacto" id="_contacto" cols="50" rows="8"></textarea>
-        <br />
+        <article>
+        <h1 id="quierescontact">¿Me quieres contactar?</h1>
+        </article>
 
-        <input type="submit" value="enviar" />
-      </form>
+        <article>
+          <form action="#" target="" method="POST" name="formDatosPersonales">
 
-      <br />
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre"/>
+        
+          <label for="apellidos">Apellidos</label>
+          <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tus apellidos"/>
+        
+          <label for="email" />Email</label>
+          <input type="email" name="email" id="email" placeholder="Email de contacto" required />
+        
+          <label for="asunto">Asunto</label>
+          <input type ="text" name="asunto" id="asunto" placeholder="Asunto"/>
+        
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" for="mensaje" placeholder="Porqué me quieres contactar" maxlength="300"></textarea>
+          
+          <input type="submit" name="enviar" value="ENVIAR"/>
+          </form>
+        </article>
+        
+        <div class="botones">
+        
+
+        <article >
+        <a class="boton" href="https://www.facebook.com/david.cuadrillero.5/"style= "color: #3b5998"><i class="fa fa-facebook-square"></i></a>
+        <a class="boton" href="/CvDavid.doc" download= "CvDavid.doc">CV</a>
+        
+        </article>
+      </div>
+      </section>
     </main>
+    <footer>
+      <hr>
+      <p>
+      © 2020 David Cuadrillero Saura/ 
+        Email: davidcuadrillerosaura@gmail.com/ 
+        Telefono: 687813350
+        
+    </footer>
   </body>
 </html>
